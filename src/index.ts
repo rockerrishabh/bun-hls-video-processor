@@ -15,7 +15,7 @@ app.use(cors());
 
 // Serve static files from the uploads directory for any request to /uploads/*
 app.use(
-  "/uploads/*",
+  "/src/uploads/*",
   serveStatic({
     root: uploadsDir, // Specify the root directory for serving static files.
   })
