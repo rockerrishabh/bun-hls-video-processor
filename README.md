@@ -34,8 +34,8 @@ This project sets up a web server using Bun and Hono that allows users to upload
 1. Clone the repository:
 
    ```bash
-   git clone <repository-url>
-   cd <repository-directory>
+   git clone https://github.com/rockerrishabh/bun-hls-video-processor.git
+   cd bun-hls-video-processor
    ```
 
 2. To install dependencies:
