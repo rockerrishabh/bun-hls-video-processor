@@ -35,3 +35,17 @@ This project sets up a web server using Bun and Hono that allows users to upload
    git clone <repository-url>
    cd <repository-directory>
    ```
+
+2. To install dependencies:
+
+   ```bash
+   bun install
+   ```
+
+3. To run:
+
+   ```bash
+   bun run index.ts
+   ```
+
+This project was created using `bun init` in bun v1.1.33. [Bun](https://bun.sh) is a fast all-in-one JavaScript runtime.
