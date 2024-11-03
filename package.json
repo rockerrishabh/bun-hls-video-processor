@@ -1,5 +1,5 @@
 {
-  "name": "server",
+  "name": "bun-hls-video-processor",
   "module": "index.ts",
   "type": "module",
   "scripts": {
