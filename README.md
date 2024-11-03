@@ -16,10 +16,10 @@ This project sets up a web server using Bun and Hono that allows users to upload
 
 ## Features
 
-- Hndle routes using Hono.using Hono.
+- Hndle routes using `Hono`.
 - Basic CORS support for cross-origin requests.
 - Serve static files from a specified uploads directory.
-- Upload single or multiple video files in various formats.
+- Upload single or multiple video files in various formats using `Bun`.
 - Convert uploaded videos to HLS format using `ffmpeg`.
 - Error handling for file uploads and conversions.
 
