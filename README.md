@@ -1,6 +1,6 @@
 # Video Upload and HLS Conversion Server
 
-This project sets up a web server using Bun and Hono that allows users to upload video files, which are then processed and converted into HLS (HTTP Live Streaming) format. The server supports CORS and serves static files from a specified uploads directory.
+This project sets up a web server using Bun and Hono that allows users to upload single or multiple video files, which are then processed and converted into HLS (HTTP Live Streaming) format. The server supports CORS and serves static files from a specified uploads directory.
 
 ## Table of Contents
 
@@ -19,7 +19,7 @@ This project sets up a web server using Bun and Hono that allows users to upload
 - Hndle routes using Hono.using Hono.
 - Basic CORS support for cross-origin requests.
 - Serve static files from a specified uploads directory.
-- Upload video files in various formats.
+- Upload single or multiple video files in various formats.
 - Convert uploaded videos to HLS format using `ffmpeg`.
 - Error handling for file uploads and conversions.
 
