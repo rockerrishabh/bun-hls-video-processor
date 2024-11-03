@@ -52,13 +52,13 @@ app.post("/uploads", async (c) => {
     // Construct a new filename for the uploaded file using the original name and the unique ID.
     const fileName =
       file.name.split(".")[0] + "-" + videoId + path.extname(file.name);
-    const filePath = `./uploads/${fileName}`; // Define the path for saving the uploaded file.
+    const filePath = `./src/uploads/${fileName}`; // Define the path for saving the uploaded file.
 
     // Write the uploaded file to the filesystem.
     await Bun.write(filePath, file);
 
-    const videoPath = `uploads/${fileName}`; // Path to the uploaded video file.
-    const outputPath = `./uploads/converted/${
+    const videoPath = `src/uploads/${fileName}`; // Path to the uploaded video file.
+    const outputPath = `./src/uploads/converted/${
       file.name.split(".")[0]
     }-${videoId}`; // Path for storing converted video files.
     const hlsPath = `${outputPath}/index.m3u8`; // Path for the HLS playlist file.
@@ -127,7 +127,7 @@ app.post("/uploads", async (c) => {
       }
 
       // Construct the URL for the converted video.
-      const videoUrl = `http://localhost:5000/uploads/converted/${
+      const videoUrl = `http://localhost:5000/src/uploads/converted/${
         file.name.split(".")[0]
       }-${videoId}/index.m3u8`;
       // Add the converted video details to the array.
